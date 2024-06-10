@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Set Up</title>
+</head>
+<body>
+    <h2>Set Up Introduction - Belle&Cozy Funiture E-commerce Website</h2>
+    <p>First of all, download the "src_code_opensource" folder.</p>
+    
+    <h5>To run the web app on Raspberry Pi or Linux</h5>
+    <ol>
+        <li>Open PuTTY and Connect to Your Raspberry Pi</li>
+        <ul>
+            <li>Open PuTTY</li>
+            <li>Enter the IP address or hostname of your Raspberry Pi.</li>
+            <li>Click "Open" and log in with your username and password.</li>
+        </ul>
+        <li>Ensure Git is Installed: Before you can clone a repository, <br>
+            you need to make sure that Git is installed on your Raspberry Pi. <br>
+            Run the following command to check if Git is installed: git --version <br>
+            If Git is not installed, you can install it using: sudo apt update
+            sudo apt install git
+        </li>
+        <li>Navigate to the Desired Directory:
+            Navigate to the directory where you want to clone the repository. <br>
+            For example, if you want to clone it to your home directory, <br>
+            you can simply do: cd ~
+        </li>
+        <li>Clone the Repository:
+            Use the git clone command followed by the URL of the GitHub repository <br>
+            you want to clone. Replace <repository_url> with the actual URL of the repository: <br>
+            git clone <repository_url> <br>
+            Our github repo: https://github.com/ethanLongPham/OpenSource-Project.git
+        </li>
+        <li>Access the repository and run this .sql file: login_bellncozy_db.sql, <br>
+            so that when using function on the website, information will be saved to database. <br>
+            Make sure the port of Maria DB is 3307, because I already modify the port of php file to 3307. <br>
+            Make sure you name your database the same as the .sql file
+        </li>
+        <li>
+            Download and run Apache. Make sure the source code folder is in Apache document directory <br>
+            If Apache is on, then you can try to access the web from whatever device using the same <br>
+            wifi connection with the Raspberry Pi.
+        </li>
+    </ol>
+    <h5>To run the web app on Window</h5>
+    <ol>
+        <li>You can download XAMPP, as it easier to set up. It's already included Apache, <br>
+            PHP, MySQL, etc.
+        </li>
+        <li>On XAMPP interface, start the Apache and MySQL services. Go to web browser and <br>
+            search http://localhost/phpmyadmin/. You can take the SQL query from the .sql file <br>
+            and create a database here.
+        </li>
+        <li>Then can just start to run the web
+        </li>
+        
+    </ol>
+
+</body>
+</html>
